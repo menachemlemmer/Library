@@ -1,0 +1,173 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: #047857;
+}
+
+header {
+  width: 100%;
+  height: 3em;
+  background-color: #047857;
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50vw;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 90%;
+  color: #047857;
+  border: none;
+  border-bottom: 2px solid #047857;
+  outline: none;
+  margin-bottom: 12px;
+  height: 1.3em;
+  transition: all 0.3s ease;
+  font-size: large;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  padding-top: 30px;
+  caret-color: #047857;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  outline: 2px solid #047857;
+  height: 2em;
+  width: 2em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+input:checked {
+  background-color: #047857;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+h2 {
+  margin: 0;
+}
+
+#add {
+  height: 1.3em;
+  width: 1.3em;
+  border: none;
+  background-color: white;
+  padding: 0;
+  font-size: larger;
+  border-radius: 10px;
+  color: #047857;
+  transition: background-color 0.5s ease;
+}
+
+#add:hover {
+  background-color: #047857;
+  color: white;
+  border: 4px solid white;
+}
+
+.main {
+  margin: 100px 20%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+  grid-auto-rows: 300px;
+  gap: 50px;
+}
+
+.card {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 4px solid #047857;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+
+.toggleRead {
+  height: 2em;
+  width: 50%;
+  border-radius: 10px;
+  border: none;
+  background-color: #047857;
+  color: white;
+  font-size: larger;
+  transition: background-color 0.5s ease;
+}
+
+.toggleRead:hover,
+.submit:hover {
+  background-color: white;
+  color: #047857;
+  border: 2px solid #047857;
+}
+
+.buttons,
+.check {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modalContent {
+  height: 540px;
+  width: 300px;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr) 2fr;
+  border: 4px solid #047857;
+  border-radius: 10px;
+  background-color: white;
+  padding: 30px;
+  gap: 25px;
+}
+
+#modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: all linear 1s;
+}
+
+.submit {
+  background-color: #047857;
+  border: none;
+  color: white;
+  height: 2em;
+  border-radius: 10px;
+  font-size: larger;
+  margin-top: 20px;
+  transition: background-color 0.5s ease;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
+}
