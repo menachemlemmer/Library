@@ -17,11 +17,11 @@
     <div class="hidden" id="modal">
       <div class="modalContent">
         <h2 class="title">Title</h2>
-        <input type="text" id="title" />
+        <input type="text" id="title" min="2" max="30" required />
         <h2 class="author">Author</h2>
-        <input type="text" id="author" />
+        <input type="text" id="author" min="2" max="30" required />
         <h2 class="pages">Pages</h2>
-        <input type="number" id="pages" />
+        <input type="number" id="pages" required />
         <div class="check">
           <h2 class="read">Read</h2>
           <input type="checkbox" id="read" />
@@ -34,82 +34,6 @@
       <p>Odin Library</p>
       <button id="add">+</button>
     </header>
-    <div class="main">
-      <div class="card">
-        <h1 class="title">Moby Dick</h1>
-        <p class="author">Herman Melville</p>
-        <p class="pages">100 pages</p>
-        <div class="buttons">
-          <button class="toggleRead">read</button>
-          <svg
-            class="w-6 h-6 text-gray-800 dark:text-white"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 7h14m-9 3v8m4-8v8M10 3h4a1 1 0 0 1 1 1v3H9V4a1 1 0 0 1 1-1ZM6 7h12v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7Z"
-            />
-          </svg>
-        </div>
-      </div>
-      <div class="card">
-        <h1 class="title">The Alchemist</h1>
-        <p class="author">Paolo Coelho</p>
-        <p class="pages">100 pages</p>
-        <div class="buttons">
-          <button class="toggleRead">read</button>
-          <svg
-            class="w-6 h-6 text-gray-800 dark:text-white"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 7h14m-9 3v8m4-8v8M10 3h4a1 1 0 0 1 1 1v3H9V4a1 1 0 0 1 1-1ZM6 7h12v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7Z"
-            />
-          </svg>
-        </div>
-      </div>
-      <div class="card">
-        <h1 class="title">Mistborn</h1>
-        <p class="author">Brandon Sanderson</p>
-        <p class="pages">100 pages</p>
-        <div class="buttons">
-          <button class="toggleRead">read</button>
-          <svg
-            class="w-6 h-6 text-gray-800 dark:text-white"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 7h14m-9 3v8m4-8v8M10 3h4a1 1 0 0 1 1 1v3H9V4a1 1 0 0 1 1-1ZM6 7h12v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7Z"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
+    <div class="main"></div>
   </body>
 </html>

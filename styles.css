@@ -80,7 +80,7 @@ h2 {
 }
 
 .main {
-  margin: 100px 20%;
+  margin: 100px 10%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
   grid-auto-rows: 300px;
@@ -109,7 +109,8 @@ h2 {
 }
 
 .toggleRead:hover,
-.submit:hover {
+.submit:hover,
+.unread {
   background-color: white;
   color: #047857;
   border: 2px solid #047857;
@@ -170,4 +171,15 @@ h2 {
 
 .hidden {
   display: none;
+}
+
+img {
+  height: 24px;
+  width: 24px;
+  transition: 0.3s ease;
+}
+
+img:hover {
+  height: 26px;
+  width: 26px;
 }
