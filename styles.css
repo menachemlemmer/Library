@@ -183,3 +183,11 @@ img:hover {
   height: 26px;
   width: 26px;
 }
+
+footer {
+  background-color: #047857;
+  height: 2em;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}

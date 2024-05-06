@@ -79,6 +79,9 @@ submitBtn.addEventListener("click", function () {
   closeModal();
   main.innerHTML = "";
   displayBooks(myLibrary);
+  document.querySelector("#author").value = "";
+  document.querySelector("#title").value = "";
+  document.querySelector("#pages").value = "";
 });
 
 function displayBooks(books) {
