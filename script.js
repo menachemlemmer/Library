@@ -100,6 +100,9 @@ function displayBooks(books) {
     buttons.classList.add("buttons");
     cardRead.classList.add("toggleRead");
     cardTitle.textContent = books[i].title;
+    if (books[i].read == "unread") {
+      cardRead.classList.add("unread");
+    }
     cardAuthor.textContent = books[i].author;
     cardPages.textContent = books[i].pages;
     cardRead.textContent = books[i].read;
