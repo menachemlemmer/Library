@@ -55,7 +55,11 @@ modalBtn.addEventListener("click", function () {
   openModal();
 });
 
-overlay.addEventListener("click", function () {
+overlay.addEventListener("click", function (e) {
+  console.log(e.target);
+  if (e.target !== overlay) {
+    return;
+  }
   closeModal();
 });
 
